@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <nav class="m-0 p-6 bg-white w-full flex drop-shadow-xl">
+        <div class="container flex item-center justify-between md:w-4.1/5 items-center w-full  mx-auto">
+            <div>
+
+                <a href="#"> <img class="text-white" width="40px" src="./assets/path74.png" alt="TailwindCss">
+                </a>
+            </div>
+
+            <div class="hidden md:flex space-x-6 w-1/3 justify-between ">
+                <a href="#" class="text-slate-900  hover:text-[var(--color-demo)]">Services</a>
+                <a href="#" class="text-slate-900  hover:text-[var(--color-demo)]">Product</a>
+                <a href="#" class="text-slate-900 hover:text-[var(--color-demo)]">Community</a>
+            </div>
+            <div class="hidden md:flex space-x-6 ">
+                <a href="#"
+                    class="py-2 px-6 shadow-2xl border-1 bg-white  hover:bg-[var(--color-demo)] hover:text-white">Login/
+                    Sign-Up</a>
+                <a href="#" class="py-2 px-6 shadow-2xl  hover:bg-[var(--color-demo)] hover:text-white">View Demo</a>
+
+            </div>
+
+            <button id="mobile-btn" class="md:hidden cursor-pointer">
+                <i class="ri-menu-line text-2xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div
+                class="absolute flex  flex-col drop-shadow-lg border border-gray-300 items-center space-y-4 font-bold bg-gray-50 py-8 top-20.5 left-6 right-6">
+                <a href="#" onclick="menuList()" class="text-slate-900  hover:text-[var(--color-demo)]">Services</a>
+                <a href="#" onclick="menuList()" class="text-slate-900  hover:text-[var(--color-demo)]">Product</a>
+                <a href="#" onclick="menuList()" class="text-slate-900 hover:text-[var(--color-demo)]">Community</a>
+                <a href="#" onclick="menuList()"
+                    class="py-2 px-6  hover:border-1 bg-white  hover:bg-[var(--color-demo)] hover:text-white">Login/
+                    Sign-Up</a>
+                <a href="#" onclick="menuList()" class="py-2 px-6   hover:bg-[var(--color-demo)] hover:text-white">View Demo</a>
+            </div>
+        </div>
+
+    </nav>
+    <section class="bg-orange-100" id="section-global-third">
+        <div class="flex flex-col lg:flex-row">
+            <div class="w-full lg:w-1/2">
+            <img id="dynamicImage" class="object-cover h-screen w-full" alt="">
+            </div>
+            <div class="mx-auto py-20 gap-20">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-3xl font-bold text-black mb-2">Found your perfect<br>insurance match?</h1>
+                    <p class="text-gray-700 mb-6 font-bold">Just share the details – we’ll help you craft the perfect
+                        brief.</p>
+                </div>
+                <div id="insurance-start">
+                    <p class="block text-gray-800 font-bold mb-4">What type of coverage are you looking for?</p>
+                    <div class="grid grid-cols-2 gap-4   pr-4  ">
+
+
+
+                        <!-- خيار 1 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+
+                            <span class="ml-2">Life Insurance</span>
+                        </label>
+
+                        <!-- خيار 2 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+
+                            <span>Health Insurance</span>
+                        </label>
+
+
+                        <!-- خيار 3 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            </span>
+                            <span>Vehicle Insurance</span>
+                        </label>
+
+                        <!-- خيار 4 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            <span>Property Insurance</span>
+                        </label>
+
+                        <!-- خيار 5 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            <span>Travel Insurance</span>
+                        </label>
+
+                        <!-- خيار 6-->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            <span>Vehicle Insurance</span>
+                        </label>
+
+                        <!-- خيار 7 -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+
+                            <span>Travel Insurance3</span>
+                        </label>
+
+                        <!-- خيار 8: Other -->
+                        <label class="flex items-center p-4 border rounded-lg shadow-sm cursor-pointer bg-white gap-2">
+                            <!-- الـ checkbox المخفي -->
+                            <input type="checkbox" name="insurance" class="peer hidden" />
+
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+
+                            <!-- حقل النص الذي يتمدد -->
+                            <input type="text" placeholder="Other (please specify)"
+                                class="border border-gray-300 rounded px-2 py-1 text-sm" />
+                        </label>
+
+                        <button onclick="insuranceHidden()"
+                            class="mt-4 w-full bg-gray-100 text-black font-medium py-3 cursor-pointer rounded-lg hover:bg-orange-600 transition">Getting
+                            started</button>
+                    </div>
+
+
+                </div>
+                <div class="hidden" id="primary-goal-second">
+                    <div class="max-w-xl mx-auto p-6 bg-gradient-to-b from-peach-100 to-peach-200 rounded-xl space-y-6">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between bg-white/50">
+                            <h2 class="font-semibold italic text-lg">Life Insurance</h2>
+                            <button>
+                                ✏️
+                            </button>
+                        </div>
+
+                        <!-- Question -->
+                        <p class="text-lg font-medium">What is your primary goal for this insurance policy?</p>
+
+                        <!-- Options -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label
+                                class="flex items-center gap-2 p-3 border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class=" w-5 h-5 md:w-6 md:h-4 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class="w-2.5 h-2.5 md:w-3.5 md:h-2 bg-black rounded-full scale-100 relative right-6 md:right-5   peer-checked:bg-orange-600"></span>
+                                <span class="text-sm ">Financial protection for family</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-3  border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class="w-5 h-5 md:w-6 md:h-4 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class="w-2.5 h-2.5 md:w-3.5 md:h-2 bg-black rounded-full scale-100 relative right-6 md:right-5  peer-checked:bg-orange-600"></span>
+                                <span class="text-sm">Medical expense coverage</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-3 border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class="w-5 h-5 md:w-6 md:h-4 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class=" w-2.5 h-2.5 md:w-3.5 md:h-2 bg-black rounded-full scale-100 relative right-6 md:right-5  peer-checked:bg-orange-600"></span>
+                                <span class="text-sm">Protection against damage</span>
+                            </label>
+                        </div>
+
+                        <!-- Other Input -->
+                        <label class="flex items-center gap-2 rounded-lg p-3 bg-white">
+                            <input type="checkbox" name="goal" class="peer hidden" />
+                            <span
+                                class="w-5 h-5  rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            <input type="text" placeholder="Other (please specify)" class="flex-1 py-2 " />
+                        </label>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex space-x-6">
+                            <button onclick="insuranceHidden()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Previous</button>
+                            <button onclick="preferPremiumHiddenAndShow()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Next</button>
+                            <button onclick="preferPremiumHiddenAndShow()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Skip</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div  class="hidden" id="prefer-premium-third">
+                    <div class="max-w-xl mx-auto p-6 bg-gradient-to-b from-peach-100 to-peach-200 rounded-xl space-y-6">
+                        <!-- Header -->
+                        <div class="flex items-center justify-between bg-white/50">
+                            <h2 class="font-semibold italic text-lg">Life Insurance</h2>
+                            <button>
+                                ✏️
+                            </button>
+                        </div>
+
+                        <!-- Question -->
+                        <p class="text-lg font-medium">What is your preferred premium payment frequency</p>
+
+                        <!-- Options -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label
+                                class="flex items-center gap-2 p-3 border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class=" w-5 h-5  rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class="w-2.5 h-2.5  bg-black rounded-full scale-100 relative right-6 peer-checked:bg-orange-600"></span>
+                                <span class="text-sm ">Monthly</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-2  border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class="w-5 h-5  rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class="w-2.5 h-2.5  bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                                <span class="text-sm">Quarterly</span>
+                            </label>
+                            <label
+                                class="flex items-center gap-2 p-3 border rounded-lg cursor-pointer bg-white hover:bg-gray-100">
+                                <input type="checkbox" name="goal" class="peer hidden" />
+                                <span
+                                    class="w-5 h-5  rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                                </span>
+                                <span
+                                    class=" w-2.5 h-2.5  bg-black rounded-full scale-100 relative right-6   peer-checked:bg-orange-600"></span>
+                                <span class="text-sm">Annually</span>
+                            </label>
+                        </div>
+
+                        <!-- Other Input -->
+                        <label class="flex items-center gap-2 rounded-lg p-3 bg-white">
+                            <input type="checkbox" name="goal" class="peer hidden" />
+                            <span
+                                class="w-5 h-5 rounded-full border-2 border-gray-400 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+                            </span>
+                            <span
+                                class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+                            <input type="text" placeholder="Other (please specify)" class="flex-1 py-2 " />
+                        </label>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex space-x-6">
+                            <button onclick="preferPremiumHiddenAndShow()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Previous</button>
+                            <button onclick="reCheckToggle()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Next</button>
+                            <button onclick="reCheckToggle()" class="px-6 py-2 rounded-md border text-sm hover:bg-amber-500 cursor-pointer">Skip</button>
+                        </div>
+                    </div>
+
+                </div>
+             
+            </div>
+        </div>
+    </section>
+    <section class="hidden" id="re-check-third">
+    <div>
+    <div class="min-h-screen bg-gradient-to-b from-orange-100 to-orange-200 p-8 flex flex-col items-center">
+<div>
+<h2 class="text-2xl font-bold mb-2 text-gray-800">Re-check & Confirm your Post</h2>
+<p class="mb-6 text-gray-700">Please re-check and confirm the below specific details and proceed further</p>
+
+<div class="bg-white rounded-xl shadow-md p-6 w-full max-w-3xl">
+  <div class="flex justify-between items-start mb-4">
+    <div>
+      <p class="font-medium text-gray-700 mb-1">Product Name</p>
+      <div class="inline-block bg-gray-200 px-3 py-1 rounded text-sm font-semibold text-gray-800">
+        Life Insurance Financial protection for family
+      </div>
+    </div>
+    <button class="text-gray-600 hover:text-gray-800 p-2">
+      ✏️
+    </button>
+  </div>
+
+  <div>
+    <p class="font-medium text-gray-700 mb-2">Product Description</p>
+    <div class="bg-gray-100 p-4 rounded text-sm text-gray-800 space-y-1">
+      <p>Product Name: [Insurance Policy Name]</p>
+      <p>Coverage Type: [Selected Coverage Type]</p>
+      <p>Policy Objective: [Selected Primary Goal]</p>
+      <p>Premium Payment Frequency: [Selected Payment Frequency]</p>
+      <p class="font-medium mt-2">Key Benefits:</p>
+      <ul class="list-disc list-inside ml-4">
+        <li>Comprehensive coverage for [Coverage Type]</li>
+        <li>Financial security for [Policy Objective]</li>
+        <li>Flexible premium payment options</li>
+      </ul>
+      <p class="mt-2 font-medium">Contact Us:</p>
+      <p>For more information or to purchase this policy, contact us at [Contact Information] or visit [Website Link]</p>
+    </div>
+  </div>
+</div>
+
+    <label class="flex items-center mt-6 space-x-2 ml-8 cursor-pointer">
+    <input type="checkbox" name="insurance" class="peer hidden" />
+
+    <span
+        class="w-5 h-5 rounded-full border-2 border-gray-800 relative flex items-center justify-center peer-checked:border-orange-600  transition">
+    </span>
+    <span
+        class="w-2.5 h-2.5 bg-black rounded-full scale-100 relative right-6  peer-checked:bg-orange-600"></span>
+    <p class="text-gray-700 text-sm">I have verified and confirmed, the details are correct</p>
+    </label>
+  
+    <button class="mt-6 bg-gray-200 hover:bg-amber-500  text-gray-800 font-semibold px-6 py-2 rounded cursor-pointer">
+      Yes, Proceed
+    </button>
+  </div>
+  </div>
+
+    </div>
+    </section>
+    <footer class="bg-slate-900 mt-4">
+        <div class=" w-4/5  mx-auto flex flex-wrap text-white px-5 py-10 justify-between space-y-8 md:space-y-0">
+            <div class=" flex flex-col    space-y-2 md:items-start">
+                <div class="pt-20">
+                    <img src="./assets/path74.png" alt="Logo">
+                </div>
+                <div class="flex space-x-2">
+                    <a href="#"><i class="ri-facebook-box-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-instagram-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-youtube-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-linkedin-fill text-3xl"></i></a>
+                    <a href="#"><i class="ri-twitter-fill text-3xl"></i></a>
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-16 py-6">
+                <a href="" class="hover:text-slate-300">
+                    <h1 class="text-2xl font-bold">
+                        Services
+                    </h1>
+                </a>
+                <div>
+                    <p>Explore Production</p>
+                    <p>Al Next-GEN</p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-16 py-6">
+                <a href="" class="hover:text-slate-300">
+                    <h1 class="text-2xl font-bold">
+                        Support
+                    </h1>
+                </a>
+                <div>
+                    <p>support</p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-16 py-6">
+                <a href="" class="hover:text-slate-300">
+                    <h1 class="text-2xl font-bold">
+                        About
+                    </h1>
+                </a>
+                <div>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+</body>
+<script src="./dist/js/menu.js"></script>
+</html>

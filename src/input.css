@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+:root {
+--color-main: rgb(240,148,0,1);
+--color-demo: #FC5B00;
+}
